@@ -73,13 +73,13 @@ const output = users.reduce(function(acc,curr){
     }
     return acc;
 },{});
-// console.log(output);
+console.log(output);
 
 // find list of all users having age < 27
 const filtered = users.filter(x => x.age<27).map(x => x.firstName+" "+x.lastName);
-// console.log(filtered);
+console.log(filtered);
 
-// find list of all users having age < 27 using reduce
+// find list of all users having age < 27 using Reduce
 const names=users.reduce((acc,curr)=>{
     if (curr.age<27) acc.push(curr.firstName);
     return acc;
