@@ -1,4 +1,4 @@
 # JavascriptBasics
 
 <h3> It has the most important basics of Javascript </h3>
-<h4>Learnt from YouTube (Akshay Saini's Namaste Javascript)</h4>
+<p>Learnt from YouTube <b>(Akshay Saini's Namaste Javascript)</b></p>
