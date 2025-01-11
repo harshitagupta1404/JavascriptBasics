@@ -97,24 +97,43 @@
 // handlePromise();    // output - Start -> after 10 secs (res1 -> end -> res2 -> end)
 // ------------------------------------------
 // Multiple awaits in a function - Scenario 3
-const p1 = new Promise(resolve => {
-    setTimeout(()=>{
-        resolve('Promise resolved');
-    },5000)
-})
-const p2 = new Promise(resolve => {
-    setTimeout(()=>{
-        resolve('Promise resolved');
-    },10000)
-})
-async function handlePromise(){
-    console.log('Start');
-    let res1 = await p1;
-    console.log(`res1 = ${res1}`);
-    console.log('end');
+// const p1 = new Promise(resolve => {
+//     setTimeout(()=>{
+//         resolve('Promise resolved');
+//     },5000)
+// })
+// const p2 = new Promise(resolve => {
+//     setTimeout(()=>{
+//         resolve('Promise resolved');
+//     },10000)
+// })
+// async function handlePromise(){
+//     console.log('Start');
+//     let res1 = await p1;
+//     console.log(`res1 = ${res1}`);
+//     console.log('end');
 
-    let res2 = await p2;
-    console.log(`res2 = ${res2}`);
-    console.log('end');
+//     let res2 = await p2;
+//     console.log(`res2 = ${res2}`);
+//     console.log('end');
+// }
+// handlePromise();    // output - Start -> after 5 secs (res1 -> end) -> after 5 more secs/10secs (res2 -> end)
+// ----------------------------------------
+// Real world example of async await
+const API_URL = "https://api.github.com/users/harshitagupta1404/repos";
+async function handlePromise(){
+    try{
+        // fetch returns a promise with response which is a readable stream
+        const data = await fetch(API_URL);
+        // data.json is again a promise
+        const jsonValue = await data.json();
+        console.log(jsonValue);
+        // using .then
+        // fetch(API_URL).then(res=>res.json()).then(res=>console.log(res));
+    }
+    catch(err){
+        console.log(`err=${err}`);
+    }
 }
-handlePromise();    // output - Start -> after 5 secs (res1 -> end) -> after 5 more secs/10secs (res2 -> end)
+handlePromise();
+
