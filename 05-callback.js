@@ -47,3 +47,7 @@
 //     end = new Date().getTime();
 // }
 // console.log("while expires");
+
+// DISADVANTAGES OF CALLBACK - Callback Hell, Inversion of Control
+// CALLBACK HELL - Callback inside callback inside callback...........
+// INVERSION OF CONTROL - loose control of your code when using callbacks because you pass that callback function to another function and give control of the callback function to that function. Now we don't know if that function will ever execute our callback function.
