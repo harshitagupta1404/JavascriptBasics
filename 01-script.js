@@ -1,5 +1,7 @@
+// Hoisting in JS
+
 // getName();
-// // console.log(a);
+// console.log(a);
 // console.log(getName)
 
 // var a = 7;
@@ -7,14 +9,14 @@
 //   console.log('Harshita Hi');
 // }
 
-// // var getName = () => {
-// //     console.log('Harshita');
-// //   }
+// var getName = () => {
+//     console.log('Harshita');
+//   }
 // console.log(a);
 // console.log(window.a);
 
 
-// // Closures
+// Closures - functions along with their lexical scope
 
 // function x(){
 //   a=7;
@@ -25,8 +27,8 @@
 // }
 
 // z = x();
-// console.log(z);
-// console.log(a);
+// console.log(z);  // o/p-function definition
+// console.log(a); // o/p-7   This will behave differently if we give 'let a =7'
 
 
 // function z(){
@@ -35,7 +37,7 @@
 //     let a =98;
 //     function y(){
 //       a=65;
-//       console.log(a,b);
+//       console.log(a,b);   //o/p-65 900
 //     }
 //     y();
 //   }
@@ -43,30 +45,30 @@
 // }
 // z();
 
-// //print 1-5 in interval of 1sec. Closures + setTimeout using let
-// function x(){
-//   for (let i =1;i<=5;i++){
-//     setTimeout(function(){
-//       console.log(i);
-//     },i*1000);
-//   }
-//   console.log('Hello');
-// }
-// x();
-
-
-// //print 1-5 in interval of 1sec. Closures + setTimeout using var
-function x() {
-  for (var i = 1; i <= 5; i++) {
-    function a(i){
-      setTimeout(function(){
-        console.log(i);
-      },i*1000);
-    }
-    a(i);
+// print 1-5 in interval of 1sec. Closures + setTimeout using let
+function x(){
+  for (let i =1;i<=5;i++){
+    setTimeout(function(){
+      console.log(i);
+    },i*1000);
   }
+  console.log('Hello');
 }
 x();
+
+
+// print 1-5 in interval of 1sec. Closures + setTimeout using var
+// function x() {
+//   for (var i = 1; i <= 5; i++) {
+//     function a(i){
+//       setTimeout(function(){
+//         console.log(i);
+//       },i*1000);
+//     }
+//     a(i);
+//   }
+// }
+// x();
 
 
 

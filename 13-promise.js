@@ -11,10 +11,18 @@
 //     console.log(`body = ${data.body}`);
 //     data.body = 'Harshita';
 //     console.log(`body2 = ${data.body}`);
-//     ;
 // });
 
 // 3 states in a promise - Pending, Fulfilled, Rejected
+// use below example to check the state of promise
+// const p1 = new Promise (function(resolve){
+//     setTimeout(()=>{
+//         console.log('timeout');
+//         resolve();
+//     },6000)
+// })
+// console.log(p1);
+
 
 // NOTE - Promise objects are immutable
 
@@ -41,6 +49,6 @@ console.log(res);
 
 
 // INTERVIEW - What is a promise? Why do you use it?
-// Promises are objects which represent the ventual completion of an async operations. It has 3 states - ..
+// Promises are objects which represent the eventual completion of an async operations. It has 3 states - ..
 // Before promises we used to use callbacks which caused problems like callback hell and inversion of control.
 // Inversion of control is handled using prmoises and callback hell can be controlled using promise chaining.

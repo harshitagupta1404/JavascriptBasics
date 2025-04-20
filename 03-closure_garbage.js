@@ -38,11 +38,11 @@ count2();
 // GARBAGE COLLECTION - JS is a high level language. Hence, JS engine has something called garbage collector. It frees up all the memory which is not in use. Uses mark and sweep technique.
 
 // GARBAGE COLLECTOR AND CLOSURES
-function abc(){
-    let a = 10;
-    return function xyz(){
-        console.log(a);
-    }
-}
-let def = abc();
+// function abc(){
+//     let a = 10;
+//     return function xyz(){
+//         console.log(a);
+//     }
+// }
+// let def = abc();
 // now this def can be used anywhere and it will use the reference of a. Hence, we cnnot free the memory for a.

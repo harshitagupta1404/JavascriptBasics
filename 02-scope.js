@@ -13,6 +13,7 @@
 //     console.log(a,b,c);  // 10,20,30
 // }
 // -----------------------------------
+// SHADOWING - redeclaring a variable in inner scope
 // SHADOWING for 'var'
 // var a=100;
 // {

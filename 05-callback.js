@@ -10,7 +10,7 @@
 //     console.log('x');
 //     y();
 // }
-// // function y is called callback function, x is called higher order function.
+// function y is called callback function, x is called higher order function.
 // x(function y(){
 //     console.log('y');
 // })
@@ -35,6 +35,7 @@
 // STARVATION - If the tasks of microtask queue keep on creating other tasks and due to which the callback queue is not able to execute its task, that is called starvation. 
 
 // EXAMPLE CODE TO SHOW A DELAY IN TIMER (13:55)
+// this doesn't work
 // console.log("Start");
 // setTimeout(function(){
 //     console.log("timer");
@@ -45,6 +46,7 @@
 // while (end<start+10000){
 //     console.log("loop");
 //     end = new Date().getTime();
+//     console.log(`end:${end}`);
 // }
 // console.log("while expires");
 

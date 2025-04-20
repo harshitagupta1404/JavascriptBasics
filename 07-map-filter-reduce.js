@@ -35,7 +35,7 @@ const arr = [1,2,3,4,5];
 //     accumulator+=current;
 //     return accumulator;
 // },0);
-// // 0 is the initial value of accumulator
+// 0 is the initial value of accumulator
 // console.log(output_sum);
 
 // ------------------------------------

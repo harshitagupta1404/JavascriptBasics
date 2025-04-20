@@ -1,4 +1,5 @@
 // CURRYING - It is a technique where a function that takes multiple arguments is transformed into a sequence of functions having 1 argument each.
+// It helps creating modular and reusable functions.
 
 function multiply(x){
     return function (y){
