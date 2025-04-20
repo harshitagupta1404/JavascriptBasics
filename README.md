@@ -30,3 +30,5 @@
     <td>Temporary session data, form data, cart data</td>
   </tr>
 </table>
+
+<b>OPTIONAL CHAINING</b> - used to access deeply nested properties. It avoids runtime errors by returning 'undefined' when trying to access properties and methods of undefined or null. 
