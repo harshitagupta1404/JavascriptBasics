@@ -32,3 +32,5 @@
 </table>
 
 <b>OPTIONAL CHAINING</b> - used to access deeply nested properties. It avoids runtime errors by returning 'undefined' when trying to access properties and methods of undefined or null. 
+
+<b>Duck Typing</b> - Concept in JS where object's behaviour matters but not the type. Eg - any component is allowed as long as it has render method. React doesn't require them to extend a specific class.
