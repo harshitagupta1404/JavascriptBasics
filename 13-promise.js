@@ -6,12 +6,11 @@
 
 // Promise state shows current state of the object. In this case, the promise shows pending while the promise state is fulfilled. This is because when this was logged the promise was pending and when you expand, it shows the current state of the promise
 // *** Body in Promise result is a readable stream
-
+// fetch returns a promise, then that promise returns parsed json which is hanled by anoher promise.
 // user.then(data => {console.log(data)
-//     console.log(`body = ${data.body}`);
-//     data.body = 'Harshita';
-//     console.log(`body2 = ${data.body}`);
-// });
+//     console.log(`body = ${data}`);
+//     return data.json();
+// }).then(op=>console.log(op));
 
 // 3 states in a promise - Pending, Fulfilled, Rejected
 // use below example to check the state of promise
@@ -38,10 +37,11 @@ function handlePromise(){
         resolve('sm');
     });
     console.log(p);
+    return p;
 }
 const res = handlePromise();
 console.log(res);
-// res.then(()=>console.log('output'));
+res.then((op)=>console.log(`output=${op}`));
 
 // NOTE - If we have a promise chain like then -> then -> then -> catch -> then
 // No matter what, the last then will be called. Even if the flow goes to catch, it will run next then

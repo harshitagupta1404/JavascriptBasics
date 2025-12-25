@@ -128,6 +128,7 @@ async function handlePromise(){
         // data.json is again a promise
         const jsonValue = await data.json();
         console.log(jsonValue);
+        return jsonValue;
         // using .then
         // fetch(API_URL).then(res=>res.json()).then(res=>console.log(res));
     }
@@ -135,5 +136,5 @@ async function handlePromise(){
         console.log(`err=${err}`);
     }
 }
-handlePromise();
-
+let res=handlePromise();
+console.log(res);

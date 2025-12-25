@@ -57,5 +57,5 @@ let obj2 = {
 obj1.printName(obj2);
 
 // -----------------------------
-// 'this' in DOM element -> refernce the HTMLElement
+// 'this' in DOM element -> reference the HTMLElement
 // <button onClick = "alert(this)">Click Me </button>
