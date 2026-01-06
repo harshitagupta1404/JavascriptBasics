@@ -27,7 +27,7 @@
   <tr>
     <td>Use Cases</td>
     <td>User preferences, offline data, caching</td>
-    <td>Temporary session data, form data, cart data</td>
+    <td>Temporary session data (any tokens), form data, cart data, temporary UI preferences like expand/collapse the sidebar</td>
   </tr>
 </table>
 
