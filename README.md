@@ -5,6 +5,44 @@
 
 <table>
   <tr>
+    <th></th>
+    <th>var</th>
+    <th>let</th>
+    <th>const</th>
+  </tr>
+  <tr>
+    <td>Scope</td>
+    <td>Function or global (if declared outside a function</td>
+    <td>Block scoped</td>
+    <td>Block scoped</td>
+  </tr>
+  <tr>
+    <td>Hoisting</td>
+    <td>Hoisted and initialized as undefined</td>
+    <td>let</td>
+    <td>const</td>
+  </tr>
+  <tr>
+    <td>Redeclaration</td>
+    <td>Can be redeclared</td>
+    <td>Cannot be redeclared</td>
+    <td>Cannot be redeclared</td>
+  </tr>
+  <tr>
+    <td>Global object binding</td>
+    <td>Attaches to window   var a = 10;
+console.log(window.a); // 10
+</td>
+    <td>Does not attach to window    let b = 10;
+console.log(window.b); // undefined
+</td>
+    <td>Does not attach to window    let b = 10;
+console.log(window.b); // undefined</td>
+  </tr>
+</table>
+
+<table>
+  <tr>
     <th>Feature</th>
     <th>Local Storage	</th>
     <th>Session Storage</th> 
