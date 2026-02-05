@@ -35,3 +35,21 @@ let b=100;      //It will have 'Script' scope
 console.log(b);     // 100
 
 // NOTE - We cannot shadow let using var (Illegal Shadowing). But vice versa can be true.
+
+// function test() {
+//   var a = 10;
+// }
+// console.log(a); // ❌ ReferenceError
+
+// if (true) {
+//   var x = 5;
+// }
+// console.log(x); // ✅ 5 (leaks outside block)
+
+// if (true) {
+//   let y = 10;
+//   const z = 20;
+// }
+// console.log(y); // ❌
+// console.log(z); // ❌
+
