@@ -36,12 +36,12 @@ function handlePromise(){
         // },5000);
         resolve('sm');
     });
-    console.log(p);
+    console.log(p);    // Promise { 'sm' }
     return p;
 }
 const res = handlePromise();
-console.log(res);
-res.then((op)=>console.log(`output=${op}`));
+console.log(res);    // Promise { 'sm' }
+res.then((op)=>console.log(`output=${op}`));    // output=sm
 
 // NOTE - If we have a promise chain like then -> then -> then -> catch -> then
 // No matter what, the last then will be called. Even if the flow goes to catch, it will run next then
