@@ -19,8 +19,8 @@
   <tr>
     <td>Hoisting</td>
     <td>Hoisted and initialized as undefined</td>
-    <td>let</td>
-    <td>const</td>
+    <td>Hoisted but not initialized (Temporal Dead Zone)</td>
+    <td>Hoisted but not initialized (Temporal Dead Zone)</td>
   </tr>
   <tr>
     <td>Redeclaration</td>
