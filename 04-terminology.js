@@ -1,5 +1,6 @@
 // a();    // 'a called'
-// b();    // error as b is undefined
+// b();    // VAR - error as b is undefined  TypeError - b is not a function 
+// b();    // LET - error as b is undefined  ReferenceError - Cannot access b before initialization 
 
 // function statement / function declaration
 // function a (){
